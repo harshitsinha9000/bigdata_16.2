@@ -1,0 +1,8 @@
+import sys
+import string
+
+list1 = "'physics', 'chemistry', 1997, 2000";
+list1=list1.split(',');
+print list1;
+list1 = ":".join(list1);
+return list1;
