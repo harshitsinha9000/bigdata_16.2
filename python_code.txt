@@ -1,8 +1,15 @@
 import sys
 import string
 
-list1 = "'physics', 'chemistry', 1997, 2000";
-list1=list1.split(',');
-print list1;
-list1 = ":".join(list1);
-return list1;
+str1=" ";
+sep="-";
+
+def join_opr(sep,list1):
+    global str1
+    for i in list1:
+        str1=str1+i+sep
+    print(str1.rstrip(sep))
+
+s = join_opr(sep,list1)
+print(s)
+
